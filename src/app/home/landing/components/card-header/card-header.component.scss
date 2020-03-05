@@ -1,0 +1,12 @@
+@import '../../../../scss/base.scss';
+
+:host {
+    display: block;
+    text-align: center;
+    padding: $mPadding;
+    border-bottom: 1px solid $darkGrey;
+    font-size: 1.1rem;
+    background: $grey;
+    border-top-right-radius: $radius;
+    border-top-left-radius: $radius;
+}

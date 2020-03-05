@@ -1,0 +1,12 @@
+@import '../../../../scss/base.scss';
+
+.controls {
+    display: block;
+    width: 100%;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    border: 1px solid $darkGrey;
+    padding: $sPadding;
+    display: flex;
+    align-items: center;
+}

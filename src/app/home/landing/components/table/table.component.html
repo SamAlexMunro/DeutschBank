@@ -1,0 +1,13 @@
+<table class="table" *ngIf="countryData">
+    <tr>
+        <th class="table__header" *ngFor="let header of keys">{{header}}</th>
+    </tr>
+
+    <tr class="table__row">
+        <ng-container *ngFor="let key of keys">
+            <td class="table__data" *ngIf="key !== 'flag'">{{countryData[key]}}</td>
+            <td class="table__data" *ngIf="key === 'flag'"><img class="table__data-flag" [src]="countryData[key]"
+                    alt=""></td>
+        </ng-container>
+    </tr>
+</table>

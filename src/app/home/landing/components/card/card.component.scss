@@ -1,0 +1,8 @@
+@import '../../../../scss/base.scss';
+
+:host {
+    background: $white;
+    @include boxShadow();
+    border-radius: $radius;
+    display: block;
+}

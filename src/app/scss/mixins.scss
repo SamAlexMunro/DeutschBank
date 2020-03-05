@@ -1,0 +1,24 @@
+@import './colours.scss';
+
+@mixin breakpoint($width) {
+    @media (min-width:#{$width}) {
+        @content;
+    }
+}
+
+@mixin boxShadow() {
+    box-shadow: -4px -4px 10px 0 rgba($white, 0.3), 4px 4px 10px 0 rgba($black, 0.6);
+}
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin textClipLinear($colour1: $green, $colour2: $blue) {
+    background-image: linear-gradient(to left, $colour1, $colour2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

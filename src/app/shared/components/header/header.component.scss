@@ -1,0 +1,12 @@
+@import '../../../scss/base.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: $headerHeight;
+    background: $white;
+    border-bottom: 1px solid $grey;
+    @include flexCenter();
+}

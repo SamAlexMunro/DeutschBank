@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/scss/base.scss';
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    overflow-y: hidden;
+}
+
+html {
+    font-size: 12px;
+    overflow-y: hidden;
+    @include breakpoint(800px) {
+        font-size: 14px;
+    }
+    @include breakpoint(2000px) {
+        font-size: 24px;
+    }
+}
+
+h4 {
+    font-family: inherit;
+    font-weight: unset;
+    font-size: 1.2rem;
+}

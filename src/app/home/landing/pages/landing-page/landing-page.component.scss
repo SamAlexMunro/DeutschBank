@@ -1,0 +1,20 @@
+@import '../../../../scss/base.scss';
+
+.globe {
+    margin-right: $sPadding;
+    @include textClipLinear();
+    font-size: 1.4rem;
+
+    @include breakpoint(450px) {
+        margin-right: $mPadding;
+    }
+}
+
+.options {
+    width: 50%;
+    overflow: hidden;
+}
+
+.mobileView {
+    width: 90%;
+}

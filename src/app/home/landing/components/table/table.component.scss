@@ -1,0 +1,28 @@
+@import '../../../../scss/base.scss';
+
+.table{
+    border: 1px solid $darkGrey;
+    width: 100%;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+    &__header{
+        text-align: unset;
+        color: $disabled;
+        font-weight: unset;
+        font-size: 0.9rem;
+        border-bottom: 1px solid $darkGrey;
+        padding: $sPadding 0;
+        text-transform: capitalize;
+    }
+    &__row{
+        width: 100%;
+        border-bottom: 1px solid $darkGrey;
+    }
+    &__data{
+        padding: $sPadding 0;
+        &-flag{
+            object-fit: contain;
+            height: 25px;
+        }
+    }
+}

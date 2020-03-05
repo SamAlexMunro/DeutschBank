@@ -1,0 +1,15 @@
+<app-card>
+    <app-card-header>Geographical Figures By Region</app-card-header>
+    <app-card-content>
+        <app-table-controls>
+            <i class="fas fa-globe-americas globe"></i>
+            <app-options [options]="regionOptions" [placeholder]="'Select a region'"
+                (selectEvent)="captureRegion($event)"></app-options>
+            <!-- I'd say an autocomplete would be very fitting for this set of options, but feels like it falls out the scope of this task, 
+                & html native options aren't the prettiest things in the world -->
+            <app-options [options]="countries" [placeholder]="'Select a country'"
+                (selectEvent)="captureCountry($event)"></app-options>
+        </app-table-controls>
+        <app-table [countryData]="countryData"></app-table>
+    </app-card-content>
+</app-card>

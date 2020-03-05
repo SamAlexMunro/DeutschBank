@@ -1,0 +1,10 @@
+@import '../../../../scss/base.scss';
+
+.select{
+    border: none;
+    background: unset;
+    border-radius: $radius;
+    @include breakpoint(450px){
+        margin-right: $mPadding;
+    }
+}

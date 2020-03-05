@@ -1,0 +1,4 @@
+<select class="select" (change)="onChange($event.target.value)">
+    <option selected disabled>{{placeholder}}</option>
+    <option *ngFor="let option of options" [value]="option.name">{{option?.name}}</option>
+</select>

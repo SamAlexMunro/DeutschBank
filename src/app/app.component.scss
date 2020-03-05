@@ -1,0 +1,23 @@
+@import './scss/base.scss';
+
+.router{
+    margin-top: $headerHeight;
+    display: flex;
+    height: calc(100vh - 8rem);
+    flex-direction: column;
+    padding: $lPadding;
+    overflow: auto;
+    @include breakpoint(800px){
+        padding: $lPadding 10vw;
+    }
+    @include breakpoint(1200px){
+        padding: $lPadding 25vw;
+    }
+    @include breakpoint(2000px){
+        padding: $lPadding 30vw;
+    }
+}
+
+.footer{
+    margin-top: auto;
+}
